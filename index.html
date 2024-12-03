@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumah123</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <header>
+    <div class="topbar">
+      <div class="container">
+        <div class="top-brand">
+          <i data-feather="smartphone" style="width: 19px;"></i>
+          <a href="#">Download aplikasi Rumah123</a>
+        </div>
+        <div class="top-menu">
+          <a href="#">Cari Agen</a>
+          <a href="#">Aset Bank</a>
+          <a href="#">Explore</a>
+          <a href="#">Berita</a>
+          <a href="#">Berita</a>
+          <a href="#" id="down-btn">Perusahaan<i data-feather="chevron-down" style="width: 16px;"></i></a>
+          <a href="#">Bantuan</a>
+        </div>
+        <!-- SELECT OPTION -->
+        <div class="opt-select">
+          <a href="" id="tentang">Tentang</a>
+          <a href="" id="event">Event</a>
+          <a href="" id="pressroom">Pressroom</a>
+        </div>
+      </div>
+      <!-- select option -->
+    </div>
+  </header>
+
+
+
+
+
+
+  <!-- FEATHER ICONS -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- SCRIPT JS -->
+  <script>
+    const downBtn = document.querySelector('#down-btn');
+    const optSelect = document.querySelector('.opt-select');
+
+    downBtn.addEventListener('click', function () {
+      optSelect.classList.toggle('active')
+    })
+  </script>
+</body>
+
+</html>
