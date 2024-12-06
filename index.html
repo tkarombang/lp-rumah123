@@ -7,6 +7,12 @@
   <title>Rumah123</title>
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://unpkg.com/feather-icons"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +41,59 @@
       </div>
       <!-- select option -->
     </div>
+
+    <nav>
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href=""><i data-feather="home" style="width: 40px; height: 40px;"></i>rumah123</a>
+        </div>
+        <div class="nav-menu">
+          <a href="#">Dijual</a>
+          <a href="#">Disewa</a>
+          <a href="#">Properti Baru</a>
+          <a href="#">KPR</a>
+          <a href="#">Panduan</a>
+        </div>
+        <div class="nav-extra">
+          <a href=""><i data-feather="radio" style="width: 19px;"></i>Pasang Iklan</a>
+          <a href=""><i data-feather="user" style="width: 19px;"></i>Akun</a>
+        </div>
+      </div>
+    </nav>
   </header>
+
+
+  <section class="hero" id="hero">
+    <main>
+
+      <div class="hero-container">
+        <div class="title-content">
+          <h1 class="title">Jual Beli Properti Jadi Mudah</h1>
+        </div>
+        <div class="menu-pilih">
+          <a href="#" class="active">Dijual</a>
+          <a href="#">Disewa</a>
+          <a href="#">Properti Baru</a>
+        </div>
+        <div class="pencarian-rumah">
+          <form action="" id="formCari">
+            <i data-feather="search" style="width: 20px; height: 20px; color: royalblue;"></i>
+            <input type="text" placeholder="Lokasi, keyword, area, project, developer" id="input-rmh" />
+            <button class="btn-cari">Cari</button>
+          </form>
+        </div>
+      </div>
+      <div class="bar-info">
+        <p>Pencarian Terakhir</p>
+        <a href="" class="info-dijual"><span>Indonesia</span> Dijual | Rumah<i data-feather="arrow-right"
+            style="width: 14px; height: 14px; color: royalblue;"></i></a>
+        <a href="" class="info-disewa"><span>Indonesia</span> Disewa | Rumah<i data-feather="arrow-right"
+            style="width: 14px; height: 14px; color: royalblue;"></i></a>
+      </div>
+    </main>
+  </section>
+
+
 
 
 
@@ -47,15 +105,9 @@
     feather.replace();
   </script>
 
-  <!-- SCRIPT JS -->
-  <script>
-    const downBtn = document.querySelector('#down-btn');
-    const optSelect = document.querySelector('.opt-select');
+  <!-- MY SCRIPT JS -->
+  <script src="js/script.js"></script>
 
-    downBtn.addEventListener('click', function () {
-      optSelect.classList.toggle('active')
-    })
-  </script>
 </body>
 
 </html>
